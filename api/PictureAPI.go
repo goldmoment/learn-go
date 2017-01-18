@@ -11,9 +11,9 @@ import (
 	"github.com/cenkalti/dominantcolor"
 	"github.com/labstack/echo"
 
-	"github.com/goldmoment/dataloader"
-	"github.com/goldmoment/model"
-	"github.com/goldmoment/utils"
+	"../dataloader"
+	"../model"
+	"../utils"
 )
 
 func PictureAdd(c echo.Context) error {

@@ -1,14 +1,14 @@
 package dbl
 
 import (
-    // "log"
+	// "log"
 
-	"github.com/goldmoment/manager"
-	"github.com/goldmoment/model"
+	"../manager"
+	"../model"
 )
 
 func GetCategories(userid string) []model.Category {
-    results := []model.Category{}
+	results := []model.Category{}
 
 	rows, err := db.Database.Query(`SELECT c.id, c.title
                     FROM categories c
@@ -16,39 +16,39 @@ func GetCategories(userid string) []model.Category {
                     AND uc.userid = ?
                     LIMIT 0 , 10`, userid) // Start from 0, limit 10 result
 	if err != nil {
-        return results
-    }
-    defer rows.Close()
-    
-    for rows.Next() {
-        var c model.Category
-        if err := rows.Scan(&c.ID, &c.Title); err != nil {
-            break
-        }
-        results = append(results, c)
-    }
-    
-    return results
+		return results
+	}
+	defer rows.Close()
+
+	for rows.Next() {
+		var c model.Category
+		if err := rows.Scan(&c.ID, &c.Title); err != nil {
+			break
+		}
+		results = append(results, c)
+	}
+
+	return results
 }
 
 func GetPublicCategories() []model.Category {
-    results := []model.Category{}
+	results := []model.Category{}
 
 	rows, err := db.Database.Query(`SELECT c.id, c.title
                     FROM categories c
                     LIMIT 0 , 10`) // Start from 0, limit 10 result
 	if err != nil {
-        return results
-    }
-    defer rows.Close()
-    
-    for rows.Next() {
-        var c model.Category
-        if err := rows.Scan(&c.ID, &c.Title); err != nil {
-            break
-        }
-        results = append(results, c)
-    }
-    
-    return results
+		return results
+	}
+	defer rows.Close()
+
+	for rows.Next() {
+		var c model.Category
+		if err := rows.Scan(&c.ID, &c.Title); err != nil {
+			break
+		}
+		results = append(results, c)
+	}
+
+	return results
 }

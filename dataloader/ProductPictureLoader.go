@@ -4,7 +4,7 @@ import (
 	// 	"fmt"
 	// 	"time"
 
-	"github.com/goldmoment/manager"
+	"../manager"
 )
 
 func AddProductPicture(productId string, pictureId string, pictureType int) error {

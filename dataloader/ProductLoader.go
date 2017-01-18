@@ -4,8 +4,8 @@ import (
 	// "log"
 	// "fmt"
 
-	"github.com/goldmoment/manager"
-	"github.com/goldmoment/model"
+	"../manager"
+	"../model"
 
 	"github.com/nu7hatch/gouuid"
 )
