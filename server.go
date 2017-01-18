@@ -1,8 +1,8 @@
 package main
 
 import (
-	"./manager"
-	"./router"
+	"github.com/goldmoment/learn-go/manager"
+	"github.com/goldmoment/learn-go/router"
 )
 
 func main() {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"../parameter"
+	"github.com/goldmoment/learn-go/parameter"
 
 	"github.com/labstack/echo"
 	"github.com/stripe/stripe-go"

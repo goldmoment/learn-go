@@ -4,7 +4,7 @@ import (
 	// 	"fmt"
 	// 	"time"
 
-	"../manager"
+	"github.com/goldmoment/learn-go/manager"
 )
 
 func AddProductPicture(productId string, pictureId string, pictureType int) error {

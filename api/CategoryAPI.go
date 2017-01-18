@@ -5,7 +5,7 @@ import (
 
 	"github.com/labstack/echo"
 
-	"../dataloader"
+	"github.com/goldmoment/learn-go/dataloader"
 )
 
 func Category(c echo.Context) error {

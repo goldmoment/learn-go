@@ -7,7 +7,7 @@ import (
 	"github.com/dgrijalva/jwt-go"
 	"github.com/labstack/echo"
 
-	"../dataloader"
+	"github.com/goldmoment/learn-go/dataloader"
 )
 
 func Login(c echo.Context) error {

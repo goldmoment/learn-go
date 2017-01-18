@@ -7,8 +7,8 @@ import (
 
 	"github.com/labstack/echo"
 
-	"../dataloader"
-	"../model"
+	"github.com/goldmoment/learn-go/dataloader"
+	"github.com/goldmoment/learn-go/model"
 )
 
 // func ProductAdd(c echo.Context) error {

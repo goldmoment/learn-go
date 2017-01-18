@@ -8,7 +8,7 @@ import (
 	"github.com/dgrijalva/jwt-go"
 	"github.com/googollee/go-socket.io"
 
-	"../model"
+	"github.com/goldmoment/learn-go/model"
 )
 
 // JWT schema of the data it will store

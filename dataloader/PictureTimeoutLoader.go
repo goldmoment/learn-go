@@ -4,8 +4,8 @@ import (
 	"time"
 	// "fmt"
 
-	"../manager"
-	"../model"
+	"github.com/goldmoment/learn-go/manager"
+	"github.com/goldmoment/learn-go/model"
 )
 
 func AddPictureTimeout(pic *model.Picture) error {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"../manager"
+	"github.com/goldmoment/learn-go/manager"
 	"github.com/nu7hatch/gouuid"
 )
 

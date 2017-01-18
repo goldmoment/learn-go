@@ -4,7 +4,7 @@ import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 
-	"../api"
+	"github.com/goldmoment/learn-go/api"
 )
 
 func InitServer() {
